@@ -1,9 +1,10 @@
 def bubble_sort(arr)
-    test = false
+  test = false
     while !test
-        test = true
-            (arr.each_with_index).each do |item, index|
-        next if index == arr.length - 1 
+  test = true
+            arr.each_with_index do |a, index|
+  next if index == arr.length - 1
+
             if arr[index] > arr[index+1]
                 arr[index], arr[index+1] = arr[index+1], arr[index] 
                 test = false
