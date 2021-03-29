@@ -18,15 +18,15 @@ arr = [4, 3, 78, 2, 0, 2]
 p bubble_sort(arr) # = [0, 2, 2, 3, 4, 78]
 
 def bubble_sort_by(arr)
-  sorted = false
-  until sorted
-    sorted = true
+  test = false
+  until test
+    test = true
     arr.each_with_index do |item, index|
       next unless arr[index + 1] && yield(item, arr[index + 1]).positive?
 
-      arr[index] > arr[index + 1]
+      (arr[index] > arr[index + 1])
       arr[index], arr[index + 1] = arr[index + 1], arr[index]
-      sorted = false
+      test = false
     end
   end
 
