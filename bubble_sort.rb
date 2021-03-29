@@ -24,10 +24,9 @@ def bubble_sort_by(arr)
     arr.each_with_index do |item, index|
       next unless arr[index + 1] && yield(item, arr[index + 1]).positive?
 
-      if arr[index] > arr[index + 1]
+       arr[index] > arr[index + 1]
         arr[index], arr[index + 1] = arr[index + 1], arr[index]
         sorted = false
-      end
     end
   end
 
