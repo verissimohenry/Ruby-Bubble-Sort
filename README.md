@@ -42,7 +42,3 @@ Give a ⭐️ if you like this project!
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## 📝 License
-
-This project is [Microverse](https://microverse.org) licensed.
